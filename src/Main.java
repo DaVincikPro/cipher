@@ -24,20 +24,24 @@ public class Main {
                 normal_cipher C0 = new normal_cipher();
                 C0.MakeList();
                 Index = C0.GetIndex(word);
+                break;
             case 1:
                 caesar_cipher C1 = new caesar_cipher();
                 C1.MakeList();
-                Index= C1.GetIndex(word);
+                Index = C1.GetIndex(word);
+                break;
         }
         switch (index2) {
             case 0:
                 normal_cipher C0 = new normal_cipher();
                 C0.MakeList();
                 C0.PrintWord(Index);
+                break;
             case 1:
                 caesar_cipher C1 = new caesar_cipher();
                 C1.MakeList();
                 C1.PrintWord(Index);
+                break;
         }
     }
 }
