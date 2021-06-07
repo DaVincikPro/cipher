@@ -42,5 +42,6 @@ public class normal_cipher {
         for (int i = 0; i < Index.length; i++) {
             System.out.print(this.List.get(Index[i]));
         }
+        System.out.print(" ");
     }
 }

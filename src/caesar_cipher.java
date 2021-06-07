@@ -48,5 +48,6 @@ public class caesar_cipher {
         for (int i = 0; i < Index.length; i++) {
             System.out.print(this.ListC.get(Index[i]));
         }
+        System.out.print(" ");
     }
 }
