@@ -1,46 +1,52 @@
 import java.util.ArrayList;
 
 public class caesar_cipher {
-    private ArrayList<String> List = new ArrayList<>();
+    private ArrayList<String> ListC = new ArrayList<>();
 
     public void MakeList() {
-        List.add("x");
-        List.add("y");
-        List.add("z");
-        List.add("a");
-        List.add("b");
-        List.add("c");
-        List.add("d");
-        List.add("e");
-        List.add("f");
-        List.add("g");
-        List.add("h");
-        List.add("i");
-        List.add("j");
-        List.add("k");
-        List.add("l");
-        List.add("m");
-        List.add("n");
-        List.add("o");
-        List.add("p");
-        List.add("s");
-        List.add("t");
-        List.add("u");
-        List.add("v");
-        List.add("w");
+        ListC.add("x");
+        ListC.add("y");
+        ListC.add("z");
+        ListC.add("a");
+        ListC.add("b");
+        ListC.add("c");
+        ListC.add("d");
+        ListC.add("e");
+        ListC.add("f");
+        ListC.add("g");
+        ListC.add("h");
+        ListC.add("i");
+        ListC.add("j");
+        ListC.add("k");
+        ListC.add("l");
+        ListC.add("m");
+        ListC.add("n");
+        ListC.add("o");
+        ListC.add("p");
+        ListC.add("s");
+        ListC.add("t");
+        ListC.add("u");
+        ListC.add("v");
+        ListC.add("w");
     }
 
     public int[] GetIndex(String word) {
         int[] Index = new int[word.length()];
         for (int i = 0; i < word.length(); i++) {
-            Index[i] = this.List.indexOf(word.charAt(i));
+            Index[i] = this.ListC.indexOf(String.valueOf(word.charAt(i)));
         }
         return Index;
     }
 
+    public void PrintList() {
+        for (int i = 0; i < this.ListC.size(); i++) {
+            System.out.println(this.ListC.get(i));
+        }
+    }
+
     public void PrintWord(int[] Index) {
         for (int i = 0; i < Index.length; i++) {
-            System.out.print(this.List.get(Index[i]));
+            System.out.print(this.ListC.get(Index[i]));
         }
     }
 }

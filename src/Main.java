@@ -3,19 +3,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scanInt = new Scanner(System.in);
+        Scanner scanStr = new Scanner(System.in);
         String[] ciphers = {"normal", "caesar"};
         System.out.println("Chose cipher from translate and to");
         for (int i = 0; i < ciphers.length; i++) {
             System.out.println(i + " " + ciphers[i]);
         }
         System.out.println("Write index of first cipher");
-        int index1 = scan.nextInt();
+        int index1 = scanInt.nextInt();
         System.out.println("Write index of second cipher");
-        int index2 = scan.nextInt();
+        int index2 = scanInt.nextInt();
 
         System.out.println("Enter word to translate");
-        String word = scan.nextLine();
+        String word = scanStr.nextLine();
 
         int[] Index = new int[word.length()];
         switch (index1) {

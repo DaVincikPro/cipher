@@ -33,7 +33,7 @@ public class normal_cipher {
     public int[] GetIndex(String word) {
         int[] Index = new int[word.length()];
         for (int i = 0; i < word.length(); i++) {
-            Index[i] = this.List.indexOf(word.charAt(i));
+            Index[i] = this.List.indexOf(String.valueOf(word.charAt(i)));
         }
         return Index;
     }
